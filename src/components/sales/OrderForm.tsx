@@ -164,7 +164,7 @@ export function OrderForm({ formId }: OrderFormProps) {
                       }`}
                     />
                   </span>
-                  <span className="text-[14px] font-semibold leading-snug text-[#111]">
+                  <span className="font-[Arial,Helvetica,sans-serif] text-[14px] font-semibold leading-snug text-[#111]">
                     {item.label}
                   </span>
                 </label>

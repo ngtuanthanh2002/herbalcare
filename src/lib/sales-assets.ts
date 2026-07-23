@@ -47,34 +47,27 @@ export const PACKAGES = [
   {
     id: "8",
     label:
-      "Bumili ng 5 kahon, libre ang 3 kahon. (Kabuuang 8 kahon) - halaga RM 229 lamang - Libreng delivery",
+      "Bumili ng 5 kahon, libre ang 3 kahon. (Kabuuang 8 kahon) - 3,399 Peso - Libreng delivery",
     value:
-      "< 8 TEH HERBA LUDWIGIA PROSTRATA >|Bumili ng 5 kahon, libre ang 3 kahon. (Kabuuang 8 kahon) - halaga RM 229 lamang - Libreng delivery",
-  },
-  {
-    id: "6",
-    label:
-      "Bumili ng 4 kahon, libre ang 2 kahon. (Kabuuang 6 kahon) - halaga RM 189 lamang - Libreng delivery",
-    value:
-      "< 6 TEH HERBA LUDWIGIA PROSTRATA >|Bumili ng 4 kahon, libre ang 2 kahon. (Kabuuang 6 kahon) - halaga RM 189 lamang - Libreng delivery",
+      "< 8 TEH HERBA LUDWIGIA PROSTRATA >|Bumili ng 5 kahon, libre ang 3 kahon. (Kabuuang 8 kahon) - 3,399 Peso - Libreng delivery",
   },
   {
     id: "4",
     label:
-      "Bumili ng 3 kahon, libre ang 1 kahon. (Kabuuang 4 kahon) - halaga RM 139 lamang - Libreng delivery",
+      "Bumili ng 3 kahon, libre ang 1 kahon. (Kabuuang 4 kahon) - 1,999 Peso - Libreng delivery",
     value:
-      "< 4 TEH HERBA LUDWIGIA PROSTRATA >|Bumili ng 3 kahon, libre ang 1 kahon. (Kabuuang 4 kahon) - halaga RM 139 lamang - Libreng delivery",
+      "< 4 TEH HERBA LUDWIGIA PROSTRATA >|Bumili ng 3 kahon, libre ang 1 kahon. (Kabuuang 4 kahon) - 1,999 Peso - Libreng delivery",
   },
   {
     id: "2",
-    label: "Espesyal na alok (2 Kahon) - RM 89 - Libreng delivery",
+    label: "Espesyal na alok (2 Kahon) - 1,299 Peso - Libreng delivery",
     value:
-      "< 2 TEH HERBA LUDWIGIA PROSTRATA >|Espesyal na alok (2 Kahon) - RM 89 - Libreng delivery",
+      "< 2 TEH HERBA LUDWIGIA PROSTRATA >|Espesyal na alok (2 Kahon) - 1,299 Peso - Libreng delivery",
   },
   {
     id: "1",
-    label: "Trial package (1 Kahon) - RM 59 + bayad RM 10",
+    label: "Trial package (1 Kahon) - 699 Peso + bayad sa paghahatid 60 Peso",
     value:
-      "< 1 TEH HERBA LUDWIGIA PROSTRATA >|Trial package (1 Kahon) - RM 59 + bayad RM 10",
+      "< 1 TEH HERBA LUDWIGIA PROSTRATA >|Trial package (1 Kahon) - 699 Peso + bayad sa paghahatid 60 Peso",
   },
 ] as const;
