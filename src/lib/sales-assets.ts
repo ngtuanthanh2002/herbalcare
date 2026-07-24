@@ -53,3 +53,5 @@ export const PACKAGES = [
       "< 1 TSAA NG HERBA LUDWIGIA PROSTRATA >|Trial package (1 Kahon) - 699 Peso + bayad sa paghahatid 60 Peso",
   },
 ] as const;
+
+export type PackageId = (typeof PACKAGES)[number]["id"];

@@ -74,15 +74,105 @@ export function OrderForm({ formId }: OrderFormProps) {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [pkg, setPkg] = useState<string>(PACKAGES[0].value);
-  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [popup, setPopup] = useState<"success" | "error" | null>(null);
+  const [errorMessage, setErrorMessage] = useState(
+    "Hindi maipadala ang order. Pakisubukan ulit sa ilang sandali.",
+  );
 
-  function onSubmit(e: FormEvent) {
+  async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+
+    setSubmitting(true);
+    setPopup(null);
+
+    try {
+      const res = await fetch("/api/order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          phone,
+          address,
+          packageValue: pkg,
+          pageUrl: typeof window !== "undefined" ? window.location.href : "",
+        }),
+      });
+
+      const data = (await res.json().catch(() => null)) as {
+        ok?: boolean;
+        error?: string;
+      } | null;
+
+      if (!res.ok || !data?.ok) {
+        setErrorMessage(
+          data?.error === "Invalid phone number"
+            ? "Hindi wasto ang numero ng telepono. Pakisuri at subukan ulit."
+            : "Hindi maipadala ang order. Pakisubukan ulit sa ilang sandali.",
+        );
+        setPopup("error");
+        return;
+      }
+
+      setName("");
+      setPhone("");
+      setAddress("");
+      setPkg(PACKAGES[0].value);
+      setPopup("success");
+    } catch {
+      setErrorMessage(
+        "Hindi maipadala ang order. Pakisubukan ulit sa ilang sandali.",
+      );
+      setPopup("error");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
     <section id={formId} className="scroll-mt-20 bg-[#f7f3ea] px-2 py-4">
+      {popup ? (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => setPopup(null)}
+        >
+          <div
+            className="w-full max-w-[340px] rounded-xl bg-white p-5 text-center shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div
+              className={`mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-full text-[28px] ${
+                popup === "success"
+                  ? "bg-green-100 text-green-600"
+                  : "bg-red-100 text-red-600"
+              }`}
+            >
+              {popup === "success" ? "✓" : "!"}
+            </div>
+            <h3 className="text-[20px] font-black text-[#111]">
+              {popup === "success" ? "Tagumpay!" : "Hindi nagawa"}
+            </h3>
+            <p className="mt-2 text-[15px] leading-snug text-[#444]">
+              {popup === "success"
+                ? "Salamat! Natanggap na ang iyong order. Tatawagan ka namin sa lalong madaling panahon."
+                : errorMessage}
+            </p>
+            <button
+              type="button"
+              onClick={() => setPopup(null)}
+              className={`mt-5 w-full rounded-full py-3 text-[16px] font-bold text-white ${
+                popup === "success" ? "bg-[#2e7d32]" : "bg-[#e53935]"
+              }`}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      ) : null}
+
       <div className="overflow-hidden rounded-md border-[3px] border-[#1976d2] bg-[#f5b095] p-2.5 shadow-md">
         {/* 2 products side by side + countdown */}
         <div className="mb-3 flex items-start gap-1.5 rounded-md bg-white/40 p-1.5">
@@ -174,17 +264,11 @@ export function OrderForm({ formId }: OrderFormProps) {
 
           <button
             type="submit"
-            className="animate-cta-bob w-full rounded-full bg-[#e53935] py-3.5 text-[22px] font-black tracking-wide text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)]"
+            disabled={submitting}
+            className="animate-cta-bob w-full rounded-full bg-[#e53935] py-3.5 text-[22px] font-black tracking-wide text-white shadow-[0_4px_10px_rgba(0,0,0,0.25)] disabled:cursor-not-allowed disabled:opacity-70"
           >
-            BUMILI NA
+            {submitting ? "PINAPADALA..." : "BUMILI NA"}
           </button>
-
-          {submitted ? (
-            <p className="rounded bg-green-50 p-3 text-center text-[15px] font-semibold text-green-800">
-              Salamat! Natanggap na ang iyong order. Tatawagan ka namin sa
-              lalong madaling panahon.
-            </p>
-          ) : null}
         </form>
 
         <div className="mt-3 rounded-md border border-black bg-white px-3 py-3 text-[14px] font-semibold leading-snug text-[#1565c0]">
