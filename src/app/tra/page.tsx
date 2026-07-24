@@ -14,14 +14,14 @@ import { IMG } from "@/lib/sales-assets";
 
 export const metadata: Metadata = {
   title:
-    "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
+    "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Sikmura",
   description:
     "Tsaa ng Herba Ludwigia Prostrata — 4 na natural na halaman para sa ulser, acid reflux, at panunaw. Hanggang 50% diskwento ngayon. COD available.",
   alternates: { canonical: "/tra" },
   openGraph: {
     title: "TSAA NG HERBA LUDWIGIA PROSTRATA",
     description:
-      "Purong Halamang Gamot – Mataas ang Bisa para sa kalusugan ng tiyan.",
+      "Purong Halamang Gamot – Mataas ang Bisa para sa kalusugan ng sikmura.",
     url: "/tra",
     locale: "fil_PH",
   },
@@ -233,8 +233,8 @@ export default function TraSalesPage() {
             <CheckItem>
               <strong>Rekomendasyon:</strong> Inirerekomenda ang tuloy-tuloy na
               paggamit nang 2 hanggang 3 buwan, lalo na kung madalas kang
-              makaranas ng: hirap sa panunaw, kabag o pamamaga ng tiyan, acid
-              reflux o heartburn, init o sakit sa itaas na bahagi ng tiyan,
+              makaranas ng: hirap sa panunaw, kabag o pamamaga ng sikmura, acid
+              reflux o heartburn, init o sakit sa itaas na bahagi ng sikmura,
               discomfort pagkatapos kumain.
             </CheckItem>
             <CheckItem>
@@ -284,18 +284,18 @@ export default function TraSalesPage() {
             </CheckItem>
             <CheckItem>
               <strong className="text-[19px]">
-                Anti-Inflammatory, Anti-Bacterial at Nagpapababa ng asido sa tiyan:
+                Anti-Inflammatory, Anti-Bacterial at Nagpapababa ng asido sa sikmura:
               </strong>{" "}
               Epektibong tumutulong laban sa bakterya at nagpapababa ng asido sa
-              tiyan, kaya nababawasan ang init at sakit ng heartburn nang
+              sikmura, kaya nababawasan ang init at sakit ng heartburn nang
               mabilis.
             </CheckItem>
             <CheckItem>
               <strong className="text-[19px]">
-                Nagpapagaling sa Lining ng Tiyan (Mucosa):
+                Nagpapagaling sa Lining ng Sikmura (Mucosa):
               </strong>{" "}
               Tumutulong magpagaling at muling bumuo ng nasirang tissue ng
-              dingding ng tiyan dahil sa anti-inflammatory nitong katangian.
+              dingding ng sikmura dahil sa anti-inflammatory nitong katangian.
             </CheckItem>
             <CheckItem>
               <strong className="text-[19px]">Nagpapabuti ng Panunaw:</strong>{" "}
@@ -309,7 +309,7 @@ export default function TraSalesPage() {
         <OrderForm formId="order-1" />
 
         {/* 16. After form: medical images then absorption then intro text */}
-        <FullImage src={IMG.hpylori} alt="Mga epekto ng H. Pylori sa tiyan" />
+        <FullImage src={IMG.hpylori} alt="Mga epekto ng H. Pylori sa sikmura" />
         <FullImage src={IMG.gerd} alt="Sakit na Refluks Gastroesophageal (GERD)" />
         <FullImage
           src={IMG.ulcer}
@@ -327,12 +327,12 @@ export default function TraSalesPage() {
             tradisyunal na gamutan at modernong proseso ng produksyon.
             Idinisenyo ang teknolohiya upang kunin at panatilihin ang
             mahahalagang medicinal benefits, at idirekta ang healing essence sa
-            apektadong lining (mucosa) ng tiyan.
+            apektadong lining (mucosa) ng sikmura.
           </p>
           <p>
             Dahil sa optimized production, nananatili ang bioactive compounds
             (tulad ng Flavonoid) sa anyong madaling masipsip ng katawan. Kapag
-            nainom, mabilis itong tumagos sa lining ng tiyan, bumabalot at
+            nainom, mabilis itong tumagos sa lining ng sikmura, bumabalot at
             nagpoprotekta sa ulcer area — isang banayad na ginhawa na mahirap
             makamit sa iba pang conventional methods.
           </p>
@@ -344,7 +344,7 @@ export default function TraSalesPage() {
         <section className="space-y-5 bg-[#fff8e7] px-4 py-6 text-[18px] leading-snug text-[#111]">
           <p>
             Kapag pumasok ito sa katawan at kumilos direkta sa problemang bahagi
-            ng tiyan, nagbibigay ang nutritional system na ito ng komprehensibong
+            ng sikmura, nagbibigay ang nutritional system na ito ng komprehensibong
             epekto:
           </p>
           <p>
@@ -355,7 +355,7 @@ export default function TraSalesPage() {
             Malakas na natural na anti-inflammatory at anti-bacterial agents.
             Tumutulong ang kombinasyong ito laban sa Helicobacter Pylori (HP),
             mabilis na nagpapagaan ng sugat sa ulcer, at binabawasan ang
-            pamamaga sa mucosa ng tiyan.
+            pamamaga sa mucosa ng sikmura.
           </p>
           <p>
             🌿{" "}
@@ -363,7 +363,7 @@ export default function TraSalesPage() {
               Hedyotis capitellata & Kabute Lingzhi (Recovery Action):
             </strong>{" "}
             Agad na nagne-neutralize ang Hedyotis capitellata ng sobrang asido sa
-            tiyan, at pinapawi ang heartburn at acid reflux. Samantala,
+            sikmura, at pinapawi ang heartburn at acid reflux. Samantala,
             tumutulong ang Kabute Lingzhi sa pagpapasigla ng katawan, paglaki ng
             bagong selula, laban sa oxidative stress, at pagpapalakas ng natural
             immunity.
@@ -376,14 +376,14 @@ export default function TraSalesPage() {
           <ul className="space-y-4">
             <CheckItem>
               <strong className="text-[#c62828]">Mabilis na Ginhawa:</strong>{" "}
-              Mas magaan at mas komportable ang tiyan. Nababawasan ang kabag,
+              Mas magaan at mas komportable ang sikmura. Nababawasan ang kabag,
               pagdighay, at asim ng sikmura matapos ang ilang araw ng
               tuloy-tuloy na paggamit.
             </CheckItem>
             <CheckItem>
               <strong className="text-[#c62828]">Matagalang Proteksyon:</strong>{" "}
               Hindi lang pansamantalang ginhawa—tumutulong sa pagpapanumbalik at
-              pagpapalakas ng normal na paggana ng tiyan para sa pangmatagalang
+              pagpapalakas ng normal na paggana ng sikmura para sa pangmatagalang
               kalusugan ng panunaw.
             </CheckItem>
             <CheckItem>

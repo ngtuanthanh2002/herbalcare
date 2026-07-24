@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ),
   title: {
     default:
-      "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
+      "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Sikmura",
     template: "%s | HerbalCare",
   },
   description:
