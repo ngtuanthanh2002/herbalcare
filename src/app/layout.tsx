@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   ),
   title: {
     default:
-      "TEH HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
+      "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
     template: "%s | HerbalCare",
   },
   description:
-    "Teh Herba Ludwigia Prostrata — 4 na natural na halaman para sa ulser, acid reflux, at panunaw. Hanggang 50% diskwento ngayon.",
+    "Tsaa ng Herba Ludwigia Prostrata — 4 na natural na halaman para sa ulser, acid reflux, at panunaw. Hanggang 50% diskwento ngayon.",
   robots: { index: true, follow: true },
 };
 

@@ -14,14 +14,14 @@ import { IMG } from "@/lib/sales-assets";
 
 export const metadata: Metadata = {
   title:
-    "TEH HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
+    "TSAA NG HERBA LUDWIGIA PROSTRATA - Makabagong Solusyong Herbal para sa Kalusugan ng Tiyan",
   description:
-    "Teh Herba Ludwigia Prostrata — 4 na natural na halaman para sa ulser, acid reflux, at panunaw. Hanggang 50% diskwento ngayon. COD available.",
+    "Tsaa ng Herba Ludwigia Prostrata — 4 na natural na halaman para sa ulser, acid reflux, at panunaw. Hanggang 50% diskwento ngayon. COD available.",
   alternates: { canonical: "/tra" },
   openGraph: {
-    title: "TEH HERBA LUDWIGIA PROSTRATA",
+    title: "TSAA NG HERBA LUDWIGIA PROSTRATA",
     description:
-      "Dalisay na halaman – pinakamataas na bisa para sa kalusugan ng tiyan.",
+      "Purong Halamang Gamot – Mataas ang Bisa para sa kalusugan ng tiyan.",
     url: "/tra",
     locale: "fil_PH",
   },
@@ -72,14 +72,14 @@ export default function TraSalesPage() {
         {/* 2. Title */}
         <section className="px-3 pb-2 pt-5 text-center">
           <div className="rounded-[32px] border-[3px] border-[#1b5e20] bg-[#f3e6d4] px-2 py-5 shadow-md">
-            <h1 className="font-serif text-[34px] font-black leading-[1.05] tracking-wide text-[#c62828]">
-              TEH HERBA
+            <h1 className="font-serif text-[28px] font-black leading-[1.05] tracking-wide text-[#c62828] sm:text-[32px]">
+              TSAA NG HERBA
               <br />
               LUDWIGIA PROSTRATA
             </h1>
           </div>
-          <p className="mt-4 text-[22px] font-extrabold leading-tight text-[#111]">
-            Dalisay na Halaman – Pinakamataas na Bisa
+          <p className="mt-4 text-[20px] font-extrabold leading-tight text-[#111] sm:text-[22px]">
+            Purong Halamang Gamot – Mataas ang Bisa
           </p>
         </section>
 
@@ -96,7 +96,7 @@ export default function TraSalesPage() {
         {/* 4. Hero graphic */}
         <FullImage
           src={IMG.hero}
-          alt="Teh Herba Ludwigia Prostrata – 4 uri ng halaman"
+          alt="Tsaa ng Herba Ludwigia Prostrata – 4 uri ng halaman"
           priority
         />
 
@@ -107,7 +107,7 @@ export default function TraSalesPage() {
           </h2>
           <ul className="space-y-4 text-[19px] leading-snug text-[#111]">
             <li>
-              📦 <strong>Pangalan ng Produkto:</strong> TEH HERBA LUDWIGIA
+              📦 <strong>Pangalan ng Produkto:</strong> TSAA NG HERBA LUDWIGIA
               PROSTRATA
             </li>
             <li>
@@ -121,7 +121,7 @@ export default function TraSalesPage() {
               ⚖️ <strong>Ispesipikasyon:</strong> 30 sachet / Kahon
             </li>
             <li>
-              ⏳ <strong>Buhay ng produkto:</strong> 24 buwan
+              ⏳ <strong>Shelf life:</strong> 24 buwan
             </li>
           </ul>
         </section>
@@ -131,7 +131,7 @@ export default function TraSalesPage() {
           <div className="relative h-40 w-40 overflow-hidden rounded-full border-[5px] border-[#c9a227] shadow-md">
             <Image
               src={IMG.teaBags}
-              alt="Mga tea bag ng Teh Herba"
+              alt="Mga tea bag ng Tsaa ng Herba"
               fill
               className="object-cover"
               sizes="160px"
@@ -151,7 +151,7 @@ export default function TraSalesPage() {
         {/* 7. Benefits / KHASIAT */}
         <FullImage
           src={IMG.benefits}
-          alt="Mga benepisyo ng Teh Herba Ludwigia Prostrata"
+          alt="Mga benepisyo ng Tsaa ng Herba Ludwigia Prostrata"
         />
 
         {/* 8. Trust checklist + logos */}
@@ -159,7 +159,7 @@ export default function TraSalesPage() {
           <ul className="space-y-4">
             <CheckItem>
               <strong className="text-[20px]">
-                Lisensyado ng KKM at FDA para sa pambansang pamamahagi
+                Rehistrado sa FDA Philippines
               </strong>
             </CheckItem>
             <CheckItem>
@@ -169,7 +169,7 @@ export default function TraSalesPage() {
             </CheckItem>
             <CheckItem>
               <strong className="text-[22px] text-[#c62828]">
-                100% Authentic Product
+                100% Orihinal na Produkto
               </strong>
             </CheckItem>
           </ul>
@@ -234,7 +234,7 @@ export default function TraSalesPage() {
               <strong>Rekomendasyon:</strong> Inirerekomenda ang tuloy-tuloy na
               paggamit nang 2 hanggang 3 buwan, lalo na kung madalas kang
               makaranas ng: hirap sa panunaw, kabag o pamamaga ng tiyan, acid
-              reflux / heartburn, init o sakit sa itaas na bahagi ng tiyan,
+              reflux o heartburn, init o sakit sa itaas na bahagi ng tiyan,
               discomfort pagkatapos kumain.
             </CheckItem>
             <CheckItem>
@@ -269,7 +269,7 @@ export default function TraSalesPage() {
         {/* 13. Product boxes */}
         <FullImage
           src={IMG.productBoxes}
-          alt="Mga kahon ng Teh Herba Ludwigia Prostrata"
+          alt="Mga kahon ng Tsaa ng Herba Ludwigia Prostrata"
         />
 
         {/* 14. Problems list */}
@@ -284,7 +284,7 @@ export default function TraSalesPage() {
             </CheckItem>
             <CheckItem>
               <strong className="text-[19px]">
-                Anti-Inflammatory, Anti-Bacterial at Nag-neutralize ng Asido:
+                Anti-Inflammatory, Anti-Bacterial at Nagpapababa ng asido sa tiyan:
               </strong>{" "}
               Epektibong tumutulong laban sa bakterya at nagpapababa ng asido sa
               tiyan, kaya nababawasan ang init at sakit ng heartburn nang
@@ -295,7 +295,7 @@ export default function TraSalesPage() {
                 Nagpapagaling sa Lining ng Tiyan (Mucosa):
               </strong>{" "}
               Tumutulong magpagaling at muling bumuo ng nasirang tissue ng
-              dingding ng tiyan dahil sa mataas na anti-inflammatory property.
+              dingding ng tiyan dahil sa anti-inflammatory nitong katangian.
             </CheckItem>
             <CheckItem>
               <strong className="text-[19px]">Nagpapabuti ng Panunaw:</strong>{" "}
@@ -321,7 +321,7 @@ export default function TraSalesPage() {
           <p>
             Ang{" "}
             <strong className="text-[#c62828]">
-              TEH HERBA LUDWIGIA PROSTRATA
+              TSAA NG HERBA LUDWIGIA PROSTRATA
             </strong>{" "}
             ay hindi karaniwang herbal drink. Ito ay perpektong kombinasyon ng
             tradisyunal na gamutan at modernong proseso ng produksyon.
@@ -376,26 +376,26 @@ export default function TraSalesPage() {
           <ul className="space-y-4">
             <CheckItem>
               <strong className="text-[#c62828]">Mabilis na Ginhawa:</strong>{" "}
-              Mas komportable at magaan ang tiyan, at malinaw na nababawasan ang
-              hangin, pagdighay, at heartburn pagkatapos ng maikling tuloy-tuloy
-              na paggamit.
+              Mas magaan at mas komportable ang tiyan. Nababawasan ang kabag,
+              pagdighay, at asim ng sikmura matapos ang ilang araw ng
+              tuloy-tuloy na paggamit.
             </CheckItem>
             <CheckItem>
               <strong className="text-[#c62828]">Matagalang Proteksyon:</strong>{" "}
-              Hindi lang pansamantalang ginhawa — pinapagaling at pinapakain ang
-              function ng tiyan mula sa ugat, para sa pangmatagalang kalusugan
-              ng panunaw.
+              Hindi lang pansamantalang ginhawa—tumutulong sa pagpapanumbalik at
+              pagpapalakas ng normal na paggana ng tiyan para sa pangmatagalang
+              kalusugan ng panunaw.
             </CheckItem>
             <CheckItem>
               <strong className="text-[#c62828]">100% Likas at Ligtas:</strong>{" "}
-              Walang preservatives, walang artificial colors, at walang synthetic
-              chemicals. Ligtas bilang pang-araw-araw na inumin kapalit ng plain
-              water, nang walang alalahanin sa side effects sa atay o bato.
+              Walang preservatives, artificial colors, o synthetic chemicals.
+              Ligtas inumin araw-araw bilang kapalit ng karaniwang tubig, nang
+              walang pag-aalala sa masamang epekto sa atay o bato.
             </CheckItem>
           </ul>
         </section>
 
-        {/* image copy 5 → 6 → 7 → 8 */}
+        {/* before-after 56 → 30 → woman → ingredients */}
         <FullImage
           src={IMG.beforeAfter56}
           alt="Bago at pagkatapos – 56 taong gulang"
@@ -410,7 +410,7 @@ export default function TraSalesPage() {
         />
         <FullImage
           src={IMG.ingredients}
-          alt="Mga sangkap ng Teh Herba Ludwigia Prostrata"
+          alt="Mga sangkap ng Tsaa ng Herba Ludwigia Prostrata"
         />
 
         {/* Order form 2 */}
@@ -424,11 +424,11 @@ export default function TraSalesPage() {
           <div className="grid grid-cols-2 gap-3">
             {[
               {
-                title: "Delivery ayon sa larawan at video na ipinapakita ng shop",
+                title: "Ang produktong matatanggap ay katulad ng nasa larawan at video.",
                 Icon: IconPackage,
               },
               { title: "Door-to-door delivery (COD)", Icon: IconTruck },
-              { title: "1 para sa 1 sa loob ng 7 araw", Icon: IconExchange },
+              { title: "Palit 1 sa 1 sa loob ng 7 araw", Icon: IconExchange },
               { title: "12 buwang warranty", Icon: IconWarranty },
             ].map((item) => (
               <div
@@ -466,21 +466,21 @@ export default function TraSalesPage() {
             <p className="text-[13px] font-bold uppercase tracking-wide text-[#ff8a3d]">
               Kilalanin
             </p>
-            <h2 className="mt-2 text-[20px] font-black leading-tight tracking-wide">
-              TEH HERBA LUDWIGIA PROSTRATA
+            <h2 className="mt-2 text-[18px] font-black leading-tight tracking-wide sm:text-[20px]">
+              TSAA NG HERBA LUDWIGIA PROSTRATA
             </h2>
             <p className="mt-4 flex items-start gap-2 text-[14px] leading-relaxed text-white/95">
               <span className="mt-0.5 shrink-0" aria-hidden>
                 🏠
               </span>
               <span>
-                11G, Jalan Pandan Indah 6/1, Pandan Indah, 55100 Kuala Lumpur,
-                Selangor, Malaysia
+                1610 Quezon Ave., Diliman, Quezon City, Metro Manila 1104,
+                Philippines
               </span>
             </p>
             <p className="mt-3 flex items-center gap-2 text-[15px] font-semibold">
               <span aria-hidden>📞</span>
-              <span>Hotline: 0111 425 5946</span>
+              <span>Hotline: 09754717952</span>
             </p>
 
             <p className="mt-8 text-[13px] font-bold uppercase tracking-wide text-[#ff8a3d]">
@@ -494,12 +494,12 @@ export default function TraSalesPage() {
               </li>
               <li>
                 <Link href="#" className="underline underline-offset-2">
-                  Patakaran sa Garantiya
+                  Patakaran sa Warranty
                 </Link>
               </li>
               <li>
                 <Link href="#" className="underline underline-offset-2">
-                  Patakaran sa Privacy
+                  Privacy Policy
                 </Link>
               </li>
               <li>

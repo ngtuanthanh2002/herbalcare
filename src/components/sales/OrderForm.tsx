@@ -89,8 +89,8 @@ export function OrderForm({ formId }: OrderFormProps) {
           <div className="flex shrink-0 gap-0.5">
             <div className="relative h-[120px] w-[72px]">
               <Image
-                src="/Images/san_pham.png"
-                alt="TEH HERBA LUDWIGIA PROSTRATA"
+                src="/Images/product.png"
+                alt="TSAA NG HERBA LUDWIGIA PROSTRATA"
                 fill
                 className="object-contain"
                 sizes="72px"
@@ -98,8 +98,8 @@ export function OrderForm({ formId }: OrderFormProps) {
             </div>
             <div className="relative h-[120px] w-[72px]">
               <Image
-                src="/Images/san_pham.png"
-                alt="TEH HERBA LUDWIGIA PROSTRATA"
+                src="/Images/product.png"
+                alt="TSAA NG HERBA LUDWIGIA PROSTRATA"
                 fill
                 className="object-contain"
                 sizes="72px"
