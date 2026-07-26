@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Outfit } from "next/font/google";
+import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -45,7 +46,10 @@ export default function RootLayout({
       lang="fil"
       className={`${fraunces.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full font-sans">{children}</body>
+      <body className="min-h-full font-sans">
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   );
 }

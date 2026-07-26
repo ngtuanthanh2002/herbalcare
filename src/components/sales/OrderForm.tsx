@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { FormEvent, useEffect, useState } from "react";
 import { PACKAGES } from "@/lib/sales-assets";
+import { trackMetaEvent } from "@/lib/meta-pixel";
 
 type OrderFormProps = {
   formId: string;
@@ -114,6 +115,22 @@ export function OrderForm({ formId }: OrderFormProps) {
         setPopup("error");
         return;
       }
+
+      const selectedPkg =
+        PACKAGES.find((p) => p.value === pkg) ?? PACKAGES[0];
+      const valueById: Record<string, number> = {
+        "8": 3399,
+        "4": 1999,
+        "2": 1299,
+        "1": 759,
+      };
+
+      trackMetaEvent("Lead");
+      trackMetaEvent("Purchase", {
+        value: valueById[selectedPkg.id] ?? 0,
+        currency: "PHP",
+        content_name: selectedPkg.label,
+      });
 
       setName("");
       setPhone("");
